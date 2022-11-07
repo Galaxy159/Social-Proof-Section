@@ -1,0 +1,41 @@
+// colors
+$color-magenta-dark: #502050;
+$color-pink: #ee68a4;
+$color-greyish-magenta-dark: #937b92;
+$color-greyish-magenta-light: #f7f2f7;
+$color-white: #ffffff;
+
+// media
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
