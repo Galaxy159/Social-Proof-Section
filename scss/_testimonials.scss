@@ -3,6 +3,12 @@
   gap: 3rem;
   border-radius: 0.8rem;
 
+  @include respond(phone) {
+    display: grid;
+    row-gap: 1.6rem;
+    justify-content: center;
+  }
+
   &__testimonial {
     width: 35rem;
     height: 23.4rem;
@@ -15,6 +21,11 @@
     align-items: center;
     row-gap: 3rem;
     column-gap: 2.3rem;
+
+    @include respond(phone) {
+      width: 32.7rem;
+      height: 24.8rem;
+    }
 
     &--avatar {
       height: 4rem;
@@ -44,8 +55,15 @@
 
 .test1 {
   margin-top: -1.6rem;
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
 }
 
 .test3 {
   margin-top: 1.6rem;
+  @include respond(phone) {
+    margin-top: 0;
+  }
 }

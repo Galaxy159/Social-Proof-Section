@@ -8,7 +8,7 @@ $color-white: #ffffff;
 // media
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 375px) {
+    @media (max-width: 1439px) {
       @content;
     }
   }
@@ -45,6 +45,10 @@ body {
   max-width: 144rem;
   margin: 0 auto;
   background-color: white;
+
+  @include respond(phone) {
+    max-width: 37.5rem;
+  }
 }
 
 .main {
@@ -52,4 +56,10 @@ body {
   background: url(../images/bg-pattern-top-desktop.svg) no-repeat,
     url(../images/bg-pattern-bottom-desktop.svg) no-repeat;
   background-position: top 0 left 0, bottom 0 right 0;
+
+  @include respond(phone) {
+    padding: 8.2rem 2.4rem;
+    background: url(../images/bg-pattern-top-mobile.svg) no-repeat,
+      url(../images/bg-pattern-bottom-mobile.svg) no-repeat;
+  }
 }

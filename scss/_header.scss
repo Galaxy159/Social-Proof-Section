@@ -3,8 +3,19 @@
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 9rem;
 
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
   &__heading {
     margin-right: 11rem;
+
+    @include respond(phone) {
+      margin-right: 0;
+    }
 
     &--headline {
       font-size: 5.6rem;
@@ -13,6 +24,13 @@
       color: $color-magenta-dark;
       letter-spacing: -2px;
       margin-bottom: 2rem;
+
+      @include respond(phone) {
+        font-size: 4rem;
+        line-height: 3.2rem;
+        letter-spacing: -1.42857px;
+        margin: 0 4rem 2rem 4rem;
+      }
     }
 
     &--text {
@@ -21,6 +39,10 @@
       line-height: 2.5rem;
       letter-spacing: -0.633333px;
       color: $color-greyish-magenta-dark;
+
+      @include respond(phone) {
+        margin: 0 1rem 4rem 1rem;
+      }
     }
   }
   &__ratings {
@@ -30,6 +52,11 @@
     grid-gap: 1.6rem;
     align-content: center;
 
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      margin-inline: auto;
+    }
+
     &--rating {
       width: 44.5rem;
       height: 5.6rem;
@@ -38,10 +65,26 @@
       display: flex;
       align-items: center;
 
+      @include respond(phone) {
+        width: 32.7rem;
+        height: 7.8rem;
+
+        @include respond(phone) {
+          display: grid;
+          grid-template-rows: repeat(3, min-content);
+          justify-items: center;
+          align-content: center;
+        }
+      }
+
       &-stars {
         margin-inline: 3.2rem;
         display: flex;
         gap: 0.845rem;
+
+        @include respond(phone) {
+          margin-bottom: 1.5rem;
+        }
       }
 
       &-text {
@@ -56,8 +99,14 @@
 
 .rating2 {
   margin-left: 4.8rem;
+  @include respond(phone) {
+    margin-left: 0;
+  }
 }
 
 .rating3 {
   margin-left: 9.6rem;
+  @include respond(phone) {
+    margin-left: 0;
+  }
 }
