@@ -1,0 +1,62 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 9rem;
+
+  &__heading {
+    margin-right: 11rem;
+
+    &--headline {
+      font-size: 5.6rem;
+      font-weight: 700;
+      line-height: 4.8rem;
+      color: $color-magenta-dark;
+      letter-spacing: -2px;
+      margin-bottom: 2rem;
+    }
+
+    &--text {
+      font-size: 1.9rem;
+      font-weight: 500;
+      line-height: 2.5rem;
+      color: $color-greyish-magenta-dark;
+    }
+  }
+  &__ratings {
+    margin-left: 1.5rem;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 1.6rem;
+    align-content: center;
+
+    &--rating {
+      width: 44.5rem;
+      height: 5.6rem;
+      background-color: $color-greyish-magenta-light;
+      border-radius: 0.8rem;
+      display: flex;
+      align-items: center;
+
+      &-stars {
+        margin-inline: 3.2rem;
+        display: flex;
+        gap: 0.845rem;
+      }
+
+      &-text {
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: $color-magenta-dark;
+        line-height: 1.6rem;
+      }
+    }
+  }
+}
+
+.rating2 {
+  margin-left: 4.8rem;
+}
+
+.rating3 {
+  margin-left: 9.6rem;
+}

@@ -39,3 +39,16 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  background-color: $color-white;
+  background: url(../images/bg-pattern-top-desktop.svg) no-repeat,
+    url(../images/bg-pattern-bottom-desktop.svg) no-repeat;
+  background-position: top 0 left 0, bottom 0 right 0;
+}
+
+.main {
+  padding: 11.7rem 16.5rem;
+}
