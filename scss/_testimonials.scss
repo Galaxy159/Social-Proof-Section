@@ -1,0 +1,51 @@
+.testimonials {
+  display: flex;
+  gap: 3rem;
+  border-radius: 0.8rem;
+
+  &__testimonial {
+    width: 35rem;
+    height: 23.4rem;
+    background-color: $color-magenta-dark;
+    padding: 4rem 3rem;
+    border-radius: 0.8rem;
+    color: $color-white;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    row-gap: 3rem;
+    column-gap: 2.3rem;
+
+    &--avatar {
+      height: 4rem;
+      border-radius: 50%;
+    }
+
+    &--name {
+      font-size: 1.7rem;
+      line-height: 2rem;
+      font-weight: 700;
+
+      & span {
+        color: $color-pink;
+        font-weight: 400;
+      }
+    }
+
+    &--text {
+      grid-column: 1 / -1;
+      font-size: 1.7rem;
+      font-weight: 500;
+      line-height: 2.2rem;
+      letter-spacing: -0.303571px;
+    }
+  }
+}
+
+.test1 {
+  margin-top: -1.6rem;
+}
+
+.test3 {
+  margin-top: 1.6rem;
+}

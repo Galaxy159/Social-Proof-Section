@@ -30,6 +30,7 @@ html {
 body {
   font-family: "League Spartan", sans-serif;
   font-size: 1.5rem;
+  background-color: #f2f2f2;
 }
 
 .attribution {
@@ -43,12 +44,12 @@ body {
 .container {
   max-width: 144rem;
   margin: 0 auto;
-  background-color: $color-white;
-  background: url(../images/bg-pattern-top-desktop.svg) no-repeat,
-    url(../images/bg-pattern-bottom-desktop.svg) no-repeat;
-  background-position: top 0 left 0, bottom 0 right 0;
+  background-color: white;
 }
 
 .main {
   padding: 11.7rem 16.5rem;
+  background: url(../images/bg-pattern-top-desktop.svg) no-repeat,
+    url(../images/bg-pattern-bottom-desktop.svg) no-repeat;
+  background-position: top 0 left 0, bottom 0 right 0;
 }
